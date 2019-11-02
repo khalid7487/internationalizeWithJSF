@@ -1,8 +1,12 @@
 
 package bean;
 import java.util.*;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 import javax.faces.event.ActionEvent;
+@ManagedBean
+@SessionScoped
 public class LocaleBean {
     private final Locale ENGLISH=Locale.ENGLISH;
     private final Locale SPANISH=new Locale("es");
